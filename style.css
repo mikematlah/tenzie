@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #0B2434;
+    padding:.5em;
+    padding-top: 5em;
+    font-family: 'Karla', sans-serif;
+    display: flex;
+    justify-content: center;
+   
+   
+}
+
+main {
+    background-color: #F5F5F5;
+    height: 400px;
+    max-width: 800px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+   
+}
+.title {
+    font-size: 40px;
+    margin: 0;
+}
+
+.instructions {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    margin-top: 0;
+    text-align: center;
+}
+.dices{
+    display:grid;
+    grid-template:auto auto/repeat(5,1fr);
+    gap: 18px;
+   
+}
+.die{
+    width:50px;
+    height: 50px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    color: #2B283A;
+    cursor:pointer;
+    
+      
+
+}
+.time{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: 20px Arial, sans-serif;
+   
+}
+.time p{
+    margin:.5em;
+}
+.my-time{
+    color:#001f3f;
+  
+}
+.best-time{
+    color:#0074D9;
+   
+}
+.numbers{
+    font-weight: 700;
+}
+.die-img{
+    width:50px;
+    height: 50px;
+    object-fit: cover;
+    box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+    border-radius:7px;
+}
+.die-num{
+    font-family: 'Karla';
+    font-weight: 700;
+    font-size: 2rem;
+}
+.roll-dice{
+    padding:1rem 3rem;
+    background: #5035FF;
+    box-shadow: 0px 3.2px 7.68px rgba(0, 0, 0, 0.18);
+    border-radius: 3.81277px;
+    color:white;
+    border:none;
+    font-weight: 700;
+    font-size: 1.2rem;
+    font-family: 'Karla', sans-serif;
+    cursor: pointer;
+}
+.held{
+    background-color:#59E391 ;
+}
+.roll-dice:focus {
+    outline: none;
+}
+
+.roll-dice:active {
+    box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
+.roll-dice:hover{
+    color:aqua;
+}
+
+/*delete*/
+.numberCircle {
+    
+    behavior: url(PIE.htc);
+    display: table;
+    background: #fff;
+    color: #001f3f;
+    
+    font: 20px Arial, sans-serif;
+  }
